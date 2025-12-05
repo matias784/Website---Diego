@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Track Seguridad</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Contenedor general */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Cuadros de análisis FODA y Porter */
+        .box {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Disposición en 2 columnas para FODA y Porter */
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .two-column .box {
+            width: 48%;
+        }
+
+        /* Estilo para las tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        /* Estilo para los botones */
+        .cta-button {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Estilo para las imágenes de los servicios */
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        /* Estilo para las imágenes en la sección Sobre Nosotros */
+        .about-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Estilo para el recuadro de Misión, Visión, Valores y Objetivos */
+        .info-box {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+        }
+
+        /* Estilo para el contenedor de las secciones de Misión, Visión, Valores y Objetivos */
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-section .info {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Barra de navegación -->
+        <nav>
+            <div class="logo">
+                <img src="images/Logo.png" alt="Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Sección de Inicio -->
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <h1>Track Seguridad</h1>
+                <p>Venta de GPS y servicios de rastreo satelital</p>
+                <a href="#contacto" class="cta-button">Contáctanos</a>
+            </div>
+        </section>
+
+        <!-- Sección de Nosotros -->
+        <section id="nosotros" class="section-container">
+            <h2>Sobre Nosotros</h2>
+            <p>En Track Seguridad, somos una empresa enfocada en brindar soluciones avanzadas de rastreo de vehículos y objetos, utilizando la última tecnología disponible en el mercado. Nos especializamos en ofrecer productos y servicios que aseguran la seguridad de tus bienes, con un enfoque innovador y personalizado para cada cliente.</p>
+            <img src="images/about-image.png" alt="Sobre nosotros" class="about-image">
+            <p>Nos enorgullece brindar un servicio confiable, eficiente y a la medida de las necesidades de nuestros clientes, asegurando la tranquilidad en todo momento. Nuestra misión es proteger lo que más te importa, utilizando sistemas de rastreo de última generación.</p>
+        </section>
+
+        <!-- Sección de Misión, Visión, Valores y Objetivos -->
+        <div class="info-box">
+            <h2>Misión, Visión, Valores y Objetivos</h2>
+            <div class="info-section">
+                <div class="info">
+                    <h3>Misión</h3>
+                    <p>Ayudar a las marcas a mejorar su visibilidad mediante estrategias digitales innovadoras que ofrezcan resultados tangibles y medibles. Nos comprometemos a llevar tu marca al futuro digital, alcanzando audiencias segmentadas con campañas personalizadas.</p>
+                </div>
+                <div class="info">
+                    <h3>Visión</h3>
+                    <p>Ser la agencia líder en marketing digital en Bolivia, innovando constantemente con soluciones adaptadas a las necesidades del cliente, utilizando las últimas tecnologías y creando estrategias exitosas.</p>
+                </div>
+                <div class="info">
+                    <h3>Valores</h3>
+                    <ul>
+                        <li>Innovación: Buscamos siempre las mejores soluciones tecnológicas para nuestros clientes.</li>
+                        <li>Compromiso: Nos comprometemos a ofrecer el mejor servicio y a cuidar de cada detalle.</li>
+                        <li>Transparencia: Creemos en relaciones abiertas y honestas con nuestros clientes.</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h3>Objetivos</h3>
+                    <ul>
+                        <li>Expandir nuestra presencia en el mercado local y regional.</li>
+                        <li>Brindar soluciones integrales de rastreo a nivel empresarial y personal.</li>
+                        <li>Continuar innovando y mejorando nuestra oferta de productos y servicios.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="section-container">
+            <h2>Servicios</h2>
+            <div class="service-item">
+                <img src="images/gps-icon.png" alt="GPS" class="service-icon">
+                <h3>Venta de GPS</h3>
+                <p>Contamos con dispositivos avanzados para la localización de vehículos, personas y objetos.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/satelite.png" alt="Satellite" class="service-icon">
+                <h3>Rastreo Satelital</h3>
+                <p>Monitoreo 24/7 de tu vehículo o bien más valioso, con acceso en tiempo real a la ubicación.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/custom.png" alt="Custom" class="service-icon">
+                <h3>Monitoreo Personalizado</h3>
+                <p>Servicio personalizado para empresas que necesitan rastrear múltiples vehículos u objetos.</p>
+            </div>
+        </section>
+
+        <!-- Sección de Portafolio (con FODA y Porter) -->
+        <section id="portfolio" class="section-container">
+            <h2>Revisa Nuestro Portafolio</h2>
+            
+            <!-- Análisis FODA -->
+            <div class="box">
+                <h2>Análisis FODA</h2>
+                <div class="two-column">
+                    <div>
+                        <h3>Fortalezas</h3>
+                        <ul>
+                            <li>Dominio de herramientas de automatización digital.</li>
+                            <li>Capacidad para personalizar estrategias para pymes.</li>
+                            <li>Buen manejo de redes sociales y pauta segmentada.</li>
+                        </ul>
+
+                        <h3>Oportunidades</h3>
+                        <ul>
+                            <li>Crecimiento del comercio electrónico en Bolivia.</li>
+                            <li>Mayor demanda de marketing digital por parte de emprendedores.</li>
+                            <li>Avances tecnológicos en herramientas de análisis de datos.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Debilidades</h3>
+                        <ul>
+                            <li>Limitado reconocimiento de marca.</li>
+                            <li>Alta rotación de personal.</li>
+                            <li>Poca experiencia en campañas internacionales.</li>
+                        </ul>
+
+                        <h3>Amenazas</h3>
+                        <ul>
+                            <li>Alta competencia de agencias consolidadas.</li>
+                            <li>Cambios constantes en algoritmos de redes.</li>
+                            <li>Clientes con bajo presupuesto publicitario.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Análisis de las 5 fuerzas de Porter -->
+            <div class="box">
+                <h2>Análisis de las 5 Fuerzas de Porter</h2>
+                <table>
+                    <tr>
+                        <th>Fuerza</th>
+                        <th>Valoración</th>
+                        <th>Estrategia</th>
+                    </tr>
+                    <tr>
+                        <td>Alto poder de negociación de los clientes</td>
+                        <td>1</td>
+                        <td>Desarrollar una propuesta de valor única que enfatice una especialización clara y un estilo visual que diferencie a Track Seguridad en el mercado.</td>
+                    </tr>
+                    <tr>
+                        <td>Alto poder de negociación de proveedores</td>
+                        <td>1</td>
+                        <td>Crear alianzas con proveedores locales para reducir costos.</td>
+                    </tr>
+                    <tr>
+                        <td>Alta amenaza de nuevos competidores</td>
+                        <td>0</td>
+                        <td>Diferenciación del producto mediante la personalización de servicios.</td>
+                    </tr>
+                    <tr>
+                        <td>Alta amenaza de productos sustitutos</td>
+                        <td>0</td>
+                        <td>Aceptación limitada de productos sustitutos, como servicios de localización GPS alternativos.</td>
+                    </tr>
+                    <tr>
+                        <td>Alta rivalidad entre competidores</td>
+                        <td>1</td>
+                        <td>Posicionar a Track Seguridad con estudios de caso y testimonios de éxito para destacar su liderazgo.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Estrategias Recomendadas -->
+            <div class="box">
+                <h2>Estrategias Recomendadas</h2>
+                <h3>Estrategia FO (Fortalezas + Oportunidades):</h3>
+                <p>Aprovechar la automatización avanzada para personalizar planes de marketing. Crear alianzas estratégicas con otras empresas tecnológicas para ampliar la oferta.</p>
+
+                <h3>Estrategia FA (Fortalezas + Amenazas):</h3>
+                <p>Desarrollar una fuerte presencia en redes sociales y diseñar campañas de marketing digital con testimonios de éxito.</p>
+
+                <h3>Estrategia DO (Debilidades + Oportunidades):</h3>
+                <p>Capacitar al equipo para manejar e-commerce y usar tecnologías avanzadas en redes sociales.</p>
+
+                <h3>Estrategia DA (Debilidades + Amenazas):</h3>
+                <p>Adaptar automatizaciones rápidamente a los cambios de algoritmo en redes sociales.</p>
+            </div>
+        </section>
+<section id="matriz-bcg" class="section-container">
+    <h2>CUADRO DE DATOS - MATRIZ BCG</h2>
+
+    <div class="bcg-images">
+        <img src="images/imagen1.png" alt="Imagen 1 de BCG">
+        <img src="images/imagen2.png" alt="Imagen 2 de BCG">
+            </div>
+</section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="section-container">
+            <h2>Contáctanos</h2>
+            <form action="#">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Track Seguridad. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>
