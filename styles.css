@@ -768,4 +768,27 @@ footer {
         flex: 1 1 100%;
     }
 }
+/* Ajustes responsive específicos para la sección BCG */
+@media (max-width: 768px) {
+    .bcg-flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .bcg-left,
+    .bcg-table {
+        flex: 1 1 100%;
+    }
+
+    /* Por si la tabla numérica es muy ancha en celular */
+    .bcg-data-table,
+    .bcg-table {
+        overflow-x: auto;
+    }
+
+    .bcg-data-table table,
+    .bcg-table table {
+        min-width: 600px; /* permite scroll horizontal sin romper el diseño */
+    }
+}
 
