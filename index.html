@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Track Seguridad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/Logo.png" alt="Logo Track Seguridad" class="logo-img">
+                <span class="logo-text">Track Seguridad</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Seguridad y rastreo en tiempo real</h1>
+                <p>Venta de GPS y servicios de rastreo satelital para vehículos, flotas y personas.</p>
+                <div class="hero-actions">
+                    <a href="#contacto" class="cta-button">Contáctanos</a>
+                    <a href="#servicios" class="secondary-button">Ver servicios</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="section-container fade-in">
+            <div class="section-header">
+                <h2>Sobre Nosotros</h2>
+                <p class="section-subtitle">
+                    En Track Seguridad brindamos soluciones avanzadas de rastreo satelital para que tengas
+                    control completo de lo que más te importa.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        En Track Seguridad, somos una empresa enfocada en brindar soluciones avanzadas de rastreo
+                        para vehículos, flotas y activos. Integramos tecnología GPS de última generación con
+                        plataformas amigables para el usuario.
+                    </p>
+                    <p>
+                        Nos enorgullece brindar un servicio confiable y eficiente, con soporte personalizado
+                        y herramientas diseñadas para mejorar la seguridad, optimizar rutas y reducir costos.
+                    </p>
+                </div>
+                <div class="about-image-wrapper">
+                    <img src="images/about-image.png" alt="Sobre nosotros" class="about-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- MISIÓN, VISIÓN, VALORES -->
+     <section class="section-container fade-in">
+    <div class="section-header">
+        <h2>Misión, Visión, Valores y Objetivos</h2>
+    </div>
+
+    <div class="mvvo-tabs">
+        <!-- Radios ocultos -->
+        <input type="radio" id="tab-mision" name="mvvo" checked>
+        <input type="radio" id="tab-vision" name="mvvo">
+        <input type="radio" id="tab-valores" name="mvvo">
+        <input type="radio" id="tab-objetivos" name="mvvo">
+
+        <!-- TABS -->
+        <div class="mvvo-tab-list">
+            <label for="tab-mision" class="mvvo-tab">
+                <span class="mvvo-icon mvvo-icon-target"></span>
+                <span>Misión</span>
+            </label>
+            <label for="tab-vision" class="mvvo-tab">
+                <span class="mvvo-icon mvvo-icon-vision"></span>
+                <span>Visión</span>
+            </label>
+            <label for="tab-valores" class="mvvo-tab">
+                <span class="mvvo-icon mvvo-icon-heart"></span>
+                <span>Valores</span>
+            </label>
+            <label for="tab-objetivos" class="mvvo-tab">
+                <span class="mvvo-icon mvvo-icon-checklist"></span>
+                <span>Objetivos</span>
+            </label>
+        </div>
+
+        <!-- CONTENIDO -->
+        <div class="mvvo-panels">
+            <div class="mvvo-panel" id="panel-mision">
+                <h3>Misión</h3>
+                <p>
+                    Proveer soluciones de rastreo satelital confiables y accesibles que ayuden a
+                    nuestros clientes a proteger sus activos y tomar decisiones inteligentes.
+                </p>
+            </div>
+
+            <div class="mvvo-panel" id="panel-vision">
+                <h3>Visión</h3>
+                <p>
+                    Ser la empresa referente en seguridad y monitoreo satelital en la región,
+                    combinando innovación tecnológica y cercanía con nuestros clientes.
+                </p>
+            </div>
+
+            <div class="mvvo-panel" id="panel-valores">
+                <h3>Valores</h3>
+                <ul>
+                    <li>Innovación</li>
+                    <li>Compromiso</li>
+                    <li>Transparencia</li>
+                    <li>Responsabilidad</li>
+                </ul>
+            </div>
+
+            <div class="mvvo-panel" id="panel-objetivos">
+                <h3>Objetivos</h3>
+                <ul>
+                    <li>Expandir presencia en el mercado.</li>
+                    <li>Brindar soluciones integrales de rastreo.</li>
+                    <li>Mejorar continuamente la experiencia del cliente.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section-container fade-in">
+            <div class="section-header">
+                <h2>Servicios</h2>
+                <p class="section-subtitle">
+                    Soluciones diseñadas para vehículos particulares, empresas y flotas de transporte.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-item card-hover">
+                    <img src="images/gps-icon.png" class="service-icon" alt="Venta de GPS">
+                    <h3>Venta de GPS</h3>
+                    <p>Dispositivos de alta precisión para localización en tiempo real.</p>
+                </div>
+
+                <div class="service-item card-hover">
+                    <img src="images/satelite.png" class="service-icon" alt="Rastreo Satelital">
+                    <h3>Rastreo Satelital</h3>
+                    <p>Monitoreo 24/7 desde cualquier dispositivo con conexión a internet.</p>
+                </div>
+
+                <div class="service-item card-hover">
+                    <img src="images/custom.png" class="service-icon" alt="Monitoreo Personalizado">
+                    <h3>Monitoreo Personalizado</h3>
+                    <p>Planes adaptados a empresas con flotas grandes y necesidades específicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTAFOLIO -->
+        <section id="portfolio" class="section-container fade-in">
+            <div class="section-header">
+                <h2>Revisa Nuestro Portafolio</h2>
+                <p class="section-subtitle">
+                    Análisis estratégico para entender dónde estamos y hacia dónde vamos.
+                </p>
+            </div>
+
+            <!-- FODA -->
+            <div class="box card-hover">
+                <h3>Análisis FODA</h3>
+                <div class="two-column">
+                    <div>
+                        <div class="foda-card">
+    <h4>Fortalezas</h4>
+    <ul>
+        <li>Automatización avanzada.</li>
+        <li>Soluciones personalizadas para cada cliente.</li>
+        <li>Soporte técnico dedicado.</li>
+    </ul>
+</div>
+
+                        <div class="foda-card">
+    <h4>Oportunidades</h4>
+    <ul>
+        <li>Crecimiento del comercio electrónico.</li>
+        <li>Aumento de la demanda en seguridad vehicular.</li>
+        <li>Avances tecnológicos en telecomunicaciones.</li>
+    </ul>
+</div>
+                    </div>
+
+                    <div>
+                        <div class="foda-card">
+    <h4>Debilidades</h4>
+    <ul>
+        <li>Bajo reconocimiento de marca inicial.</li>
+        <li>Procesos en expansión.</li>
+        <li>Limitada experiencia internacional.</li>
+    </ul>
+</div>
+
+                       <div class="foda-card">
+    <h4>Amenazas</h4>
+    <ul>
+        <li>Alta competencia en el sector.</li>
+        <li>Cambios regulatorios y tecnológicos.</li>
+        <li>Clientes con bajo presupuesto de inversión.</li>
+    </ul>
+</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box card-hover">
+    <h3>Estrategias FODA</h3>
+
+    <div class="two-column">
+        <div class="foda-card">
+            <h4>FO (Fortalezas + Oportunidades)</h4>
+            <ul>
+                <li>F1 + O4: Aplicar automatización avanzada con nuevas herramientas de análisis de datos para ofrecer soluciones más precisas a los clientes y captar una mayor participación en el mercado de rastreo.</li>
+                <li>F2 + O2: Ofrecer planes personalizados de marketing y seguridad para emprendedores y empresas que deseen rastrear sus activos, aprovechando la demanda creciente por seguridad vehicular.</li>
+                <li>F3 + O3: Crear alianzas con diseñadores freelance y programadores para optimizar la plataforma de rastreo y utilizar las últimas tecnologías de telecomunicaciones.</li>
+                <li>F4 + O4: Diseñar campañas digitales dirigidas a e-commerce y capacitar a los clientes sobre cómo proteger y rastrear sus productos, aprovechando la expansión del comercio electrónico.</li>
+            </ul>
+        </div>
+
+        <div class="foda-card">
+            <h4>DO (Debilidades + Oportunidades)</h4>
+            <ul>
+                <li>D1 + O3: Asociarse con influencers o creadores de contenido para aumentar visibilidad en el mercado de rastreo y atraer a más clientes.</li>
+                <li>D4 + O2: Ofrecer servicios básicos de rastreo a un costo más accesible para captar nuevos clientes y aumentar la demanda en el mercado de seguridad vehicular.</li>
+                <li>D3 + O4: Capacitar al equipo en las últimas tendencias internacionales de e-commerce y seguridad vehicular, logrando una oferta más competitiva a nivel global.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="two-column">
+        <div class="foda-card">
+            <h4>FA (Fortalezas + Amenazas)</h4>
+            <ul>
+                <li>F1 + A2: Adaptar nuestras automatizaciones rápidamente a los cambios en algoritmos de rastreo y nuevos avances tecnológicos.</li>
+                <li>F2 + A1: Enfocarnos en propuestas creativas para diferenciarnos de competidores mediante soluciones personalizadas.</li>
+                <li>F3 + A3: Ofrecer resultados medibles que justifiquen la inversión y demuestren el retorno (ROI) de nuestros servicios.</li>
+                <li>F4 + A4: Utilizar redes sociales como medio directo de comunicación para generar confianza y soporte en tiempos de crisis.</li>
+            </ul>
+        </div>
+
+        <div class="foda-card">
+            <h4>DA (Debilidades + Amenazas)</h4>
+            <ul>
+                <li>D1 + A1: Posicionar nuestra marca mediante testimonios y casos de éxito que demuestren la efectividad de nuestros servicios.</li>
+                <li>D3 + A3: Optimizar recursos internos para ofrecer servicios más rentables sin afectar la calidad.</li>
+                <li>D4 + A4: Establecer beneficios no económicos como capacitación constante para aumentar la motivación y reducir la rotación del personal.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+            <!-- PORTER -->
+            <div class="box card-hover">
+                <h3>5 Fuerzas de Porter</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Fuerza</th>
+                                <th>Valoración</th>
+                                <th>Estrategia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    <tr>
+        <td>Alto poder de negociación de los clientes</td>
+        <td>1</td>
+        <td>Diferenciación clara, plataformas intuitivas y soporte constante.</td>
+    </tr>
+
+    <tr>
+        <td>Nivel de organización</td>
+        <td>1</td>
+        <td>Destacamos en la atención al cliente y en la personalización de nuestros productos.</td>
+    </tr>
+
+    <tr>
+        <td>Nivel de información</td>
+        <td>1</td>
+        <td>Ofrecemos información clara y accesible sobre nuestros productos y servicios.</td>
+    </tr>
+
+    <tr>
+        <td>Servicio de atención</td>
+        <td>0</td>
+        <td>Podemos mejorar la atención post-venta para generar una relación más cercana con los clientes.</td>
+    </tr>
+
+    <tr>
+        <td>Alto poder de negociación de los proveedores</td>
+        <td>0.4</td>
+        <td>Alianzas estratégicas con proveedores tecnológicos confiables.</td>
+    </tr>
+
+    <tr>
+        <td>Cantidad de proveedores</td>
+        <td>0</td>
+        <td>Concentración de proveedores, por lo que buscamos diversificar nuestras opciones.</td>
+    </tr>
+
+    <tr>
+        <td>Variedad de artículos sustitutos</td>
+        <td>0</td>
+        <td>Nos diferenciamos ofreciendo soluciones personalizadas que no tienen sustitutos directos.</td>
+    </tr>
+
+    <tr>
+        <td>Acceso a los canales de distribución</td>
+        <td>1</td>
+        <td>Estamos mejorando la logística y distribución para alcanzar más clientes.</td>
+    </tr>
+
+    <tr>
+        <td>Alta amenaza de nuevos competidores</td>
+        <td>0.4</td>
+        <td>Ofrecer valor agregado mediante servicios personalizados.</td>
+    </tr>
+
+    <tr>
+        <td>Niveles de precios</td>
+        <td>0.5</td>
+        <td>Garantizar un precio competitivo, pero enfocado en el valor y calidad del servicio.</td>
+    </tr>
+
+    <tr>
+        <td>Alta amenaza de productos sustitutos</td>
+        <td>0</td>
+        <td>Enfatizar la precisión y estabilidad de nuestras soluciones.</td>
+    </tr>
+
+    <tr>
+        <td>Cantidad de productos sustitutos</td>
+        <td>0</td>
+        <td>Minimizar la competencia mediante innovación y mejora continua.</td>
+    </tr>
+
+    <tr>
+        <td>Aceptación de los productos sustitutos</td>
+        <td>0</td>
+        <td>Monitoreo constante del mercado para anticipar cambios en las preferencias del cliente.</td>
+    </tr>
+
+    <tr>
+        <td>Rivalidad entre competidores</td>
+        <td>0.5</td>
+        <td>Posicionamiento mediante casos de éxito y atención cercana.</td>
+    </tr>
+
+    <tr>
+        <td>Número de competidores</td>
+        <td>1</td>
+        <td>Fomentar la fidelización y crear barreras de entrada mediante innovación.</td>
+    </tr>
+
+    <tr>
+        <td>Tamaño de los competidores</td>
+        <td>0.5</td>
+        <td>Destacar las ventajas de ser una empresa ágil con atención personalizada.</td>
+    </tr>
+
+    <tr>
+        <td>Crecimiento del sector</td>
+        <td>0.5</td>
+        <td>Aprovechar el crecimiento del sector para posicionar nuestra marca.</td>
+    </tr>
+
+    <tr>
+        <td>Diferenciación del producto</td>
+        <td>1</td>
+        <td>Crear propuestas de valor que nos diferencien de la competencia.</td>
+    </tr>
+</tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- MATRIZ BCG -->
+        <section id="matriz-bcg" class="section-container fade-in">
+    <div class="section-header">
+        <h2>Matriz BCG</h2>
+        <p class="section-subtitle">
+            Análisis visual del portafolio de servicios de Track Seguridad.
+        </p>
+    </div>
+
+    <div class="bcg-flex">
+
+        <div class="bcg-left">
+
+        <!-- TABLA NUMÉRICA BCG -->
+        <div class="bcg-data-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Productos</th>
+                        <th>Ventas 2024</th>
+                        <th>% 2024</th>
+                        <th>Ventas 2025</th>
+                        <th>% 2025</th>
+                        <th>Participación relativa</th>
+                        <th>Tasa de crecimiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Publicidad en redes</td>
+                        <td>100,000.00</td>
+                        <td>32.3</td>
+                        <td>150,000.00</td>
+                        <td>35.7</td>
+                        <td>1.5</td>
+                        <td>50.0</td>
+                    </tr>
+                    <tr>
+                        <td>SEO y posicionamiento web</td>
+                        <td>60,000.00</td>
+                        <td>19.4</td>
+                        <td>75,000.00</td>
+                        <td>17.9</td>
+                        <td>0.8</td>
+                        <td>25.0</td>
+                    </tr>
+                    <tr>
+                        <td>Creación de tiendas virtuales</td>
+                        <td>75,000.00</td>
+                        <td>24.2</td>
+                        <td>95,000.00</td>
+                        <td>22.6</td>
+                        <td>1.2</td>
+                        <td>30.0</td>
+                    </tr>
+                    <tr>
+                        <td>Branding digital</td>
+                        <td>50,000.00</td>
+                        <td>16.1</td>
+                        <td>65,000.00</td>
+                        <td>15.5</td>
+                        <td>0.7</td>
+                        <td>30.0</td>
+                    </tr>
+                    <tr>
+                        <td>Analítica de datos</td>
+                        <td>25,000.00</td>
+                        <td>8.1</td>
+                        <td>35,000.00</td>
+                        <td>8.3</td>
+                        <td>0.4</td>
+                        <td>40.0</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>310,000.00</strong></td>
+                        <td><strong>100.0</strong></td>
+                        <td><strong>420,000.00</strong></td>
+                        <td><strong>100.0</strong></td>
+                        <td>-</td>
+                        <td><strong>35.0</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- DIAGRAMA BCG -->
+        <div class="bcg-chart">
+            <img src="images/imagen1.png" alt="Diagrama Matriz BCG">
+        </div>
+    </div>
+
+        <!-- TABLA BCG -->
+        <div class="bcg-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Estrategias</th>
+                        <th>Actividades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Publicidad en redes sociales</td>
+                        <td>Explorar extensiones de línea y nuevas funcionalidades.</td>
+                        <td>Lanzar un servicio adicional de "Social Ads con Influencers Locales", integrando analítica de rendimiento en tiempo real.</td>
+                    </tr>
+                    <tr>
+                        <td>Creación de tiendas virtuales</td>
+                        <td>Alianzas estratégicas.</td>
+                        <td>Firmar un acuerdo con proveedores de logística local para integrar envíos desde la tienda virtual como ventaja competitiva.</td>
+                    </tr>
+                    <tr>
+                        <td>SEO y posicionamiento web</td>
+                        <td>Reorientación del producto.</td>
+                        <td>Convertir el servicio de SEO en una consultoría de visibilidad online (Google Maps, marketplaces y redes sociales).</td>
+                    </tr>
+                    <tr>
+                        <td>Branding digital</td>
+                        <td>Integración con otro producto.</td>
+                        <td>Incluir "Branding Express" gratis al contratar una tienda virtual, con opción de upgrade.</td>
+                    </tr>
+                    <tr>
+                        <td>Analítica de datos</td>
+                        <td>Experimentación y aprendizaje rápido.</td>
+                        <td>Lanzar un demo interactivo en la web donde los usuarios carguen datos ficticios y vean los reportes que recibirán.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section-container fade-in">
+            <div class="section-header">
+                <h2>Contáctanos</h2>
+                <p class="section-subtitle">
+                    Déjanos tus datos y nos pondremos en contacto contigo para asesorarte.
+                </p>
+            </div>
+            <form action="#" class="contact-form">
+                <div class="form-row">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                </div>
+                <textarea name="mensaje" placeholder="Cuéntanos qué necesitas" required></textarea>
+                <button type="submit" class="cta-button">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Track Seguridad. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
+
+
