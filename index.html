@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Track Seguridad</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Estilos adicionales (se mantienen tus clases sin renombrar) */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .two-column .box {
+            width: 48%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        .cta-button {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #e67e22;
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .about-image {
+            width: 85%;
+            max-width: 650px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .info-box {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- NAVBAR -->
+        <nav>
+            <div class="logo">
+                <img src="images/Logo.png" alt="Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <h1>Track Seguridad</h1>
+                <p>Venta de GPS y servicios de rastreo satelital</p>
+                <a href="#contacto" class="cta-button">Contáctanos</a>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros" class="section-container">
+            <h2>Sobre Nosotros</h2>
+            <p>En Track Seguridad, somos una empresa enfocada en brindar soluciones avanzadas de rastreo...</p>
+            <img src="images/about-image.png" alt="Sobre nosotros" class="about-image">
+            <p>Nos enorgullece brindar un servicio confiable y eficiente...</p>
+        </section>
+
+        <!-- MISIÓN, VISIÓN, VALORES -->
+        <div class="info-box">
+            <h2>Misión, Visión, Valores y Objetivos</h2>
+
+            <div class="info-section">
+                <div class="info">
+                    <h3>Misión</h3>
+                    <p>Ayudar a las marcas a mejorar su visibilidad...</p>
+                </div>
+                <div class="info">
+                    <h3>Visión</h3>
+                    <p>Ser la agencia líder en marketing digital...</p>
+                </div>
+                <div class="info">
+                    <h3>Valores</h3>
+                    <ul>
+                        <li>Innovación</li>
+                        <li>Compromiso</li>
+                        <li>Transparencia</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h3>Objetivos</h3>
+                    <ul>
+                        <li>Expandir presencia en el mercado</li>
+                        <li>Brindar soluciones integrales de rastreo</li>
+                        <li>Seguir innovando</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section-container">
+            <h2>Servicios</h2>
+
+            <div class="service-item">
+                <img src="images/gps-icon.png" class="service-icon">
+                <h3>Venta de GPS</h3>
+                <p>Dispositivos avanzados para localización.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="images/satelite.png" class="service-icon">
+                <h3>Rastreo Satelital</h3>
+                <p>Monitoreo 24/7 en tiempo real.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="images/custom.png" class="service-icon">
+                <h3>Monitoreo Personalizado</h3>
+                <p>Ideal para empresas con flotas grandes.</p>
+            </div>
+        </section>
+
+        <!-- PORTAFOLIO -->
+        <section id="portfolio" class="section-container">
+            <h2>Revisa Nuestro Portafolio</h2>
+
+            <!-- FODA -->
+            <div class="box">
+                <h2>Análisis FODA</h2>
+                <div class="two-column">
+                    <div>
+                        <h3>Fortalezas</h3>
+                        <ul>
+                            <li>Automatización avanzada</li>
+                            <li>Estrategias personalizadas</li>
+                            <li>Manejo de redes</li>
+                        </ul>
+
+                        <h3>Oportunidades</h3>
+                        <ul>
+                            <li>Crecimiento e-commerce</li>
+                            <li>Demanda en emprendedores</li>
+                            <li>Avances tecnológicos</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Debilidades</h3>
+                        <ul>
+                            <li>Bajo reconocimiento</li>
+                            <li>Rotación de personal</li>
+                            <li>Poca experiencia internacional</li>
+                        </ul>
+
+                        <h3>Amenazas</h3>
+                        <ul>
+                            <li>Mucha competencia</li>
+                            <li>Cambios en algoritmos</li>
+                            <li>Clientes con bajo presupuesto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PORTER -->
+            <div class="box">
+                <h2>5 Fuerzas de Porter</h2>
+                <table>
+                    <tr>
+                        <th>Fuerza</th>
+                        <th>Valoración</th>
+                        <th>Estrategia</th>
+                    </tr>
+                    <tr>
+                        <td>Clientes</td>
+                        <td>1</td>
+                        <td>Diferenciación clara y visual.</td>
+                    </tr>
+                    <tr>
+                        <td>Proveedores</td>
+                        <td>1</td>
+                        <td>Alianzas estratégicas.</td>
+                    </tr>
+                    <tr>
+                        <td>Nuevos competidores</td>
+                        <td>0</td>
+                        <td>Personalizar servicios.</td>
+                    </tr>
+                    <tr>
+                        <td>Sustitutos</td>
+                        <td>0</td>
+                        <td>Limitada aceptación.</td>
+                    </tr>
+                    <tr>
+                        <td>Rivalidad</td>
+                        <td>1</td>
+                        <td>Posicionamiento con casos de éxito.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- MATRIZ BCG -->
+        <section id="matriz-bcg" class="section-container">
+            <h2>CUADRO DE DATOS - MATRIZ BCG</h2>
+
+            <div class="bcg-images">
+                <img src="images/imagen1.png" alt="Imagen 1">
+              
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section-container">
+            <h2>Contáctanos</h2>
+            <form action="#">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Track Seguridad. Todos los derechos reservados.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
