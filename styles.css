@@ -768,7 +768,19 @@ footer {
         flex: 1 1 100%;
     }
 }
-/* Ajustes responsive específicos para la sección BCG */
+/* Ajustes responsive para BCG - estilo igual que la tabla de Porter */
+.bcg-data-table {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Ancho mínimo para evitar deformación */
+.bcg-data-table table {
+    min-width: 900px; /* Puedes subirlo a 1000px si deseas más espacio */
+}
+
+/* Aseguramos que la tabla se vea bien en vista móvil */
 @media (max-width: 768px) {
     .bcg-flex {
         flex-direction: column;
@@ -777,18 +789,22 @@ footer {
 
     .bcg-left,
     .bcg-table {
-        flex: 1 1 100%;
+        width: 100%;
     }
 
-    /* Por si la tabla numérica es muy ancha en celular */
-    .bcg-data-table,
+    .bcg-chart img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* También a la tabla de estrategias para evitar quiebres */
     .bcg-table {
         overflow-x: auto;
     }
 
-    .bcg-data-table table,
     .bcg-table table {
-        min-width: 600px; /* permite scroll horizontal sin romper el diseño */
+        min-width: 900px;
     }
 }
+
 
