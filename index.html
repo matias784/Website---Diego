@@ -6,16 +6,138 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Track Seguridad</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
 
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Contenedor general */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Cuadros de análisis FODA y Porter */
+        .box {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Disposición en 2 columnas para FODA y Porter */
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .two-column .box {
+            width: 48%;
+        }
+
+        /* Estilo para las tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f5f5f5;
+        }
+
+        /* Estilo para los botones */
+        .cta-button {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Estilo para las imágenes de los servicios */
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        /* Estilo para las imágenes en la sección Sobre Nosotros */
+        .about-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Estilo para el recuadro de Misión, Visión, Valores y Objetivos */
+        .info-box {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .info-box .info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 48%;
+        }
+
+        /* FODA */
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .two-column .box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 48%;
+        }
+
+    </style>
+</head>
 <body>
     <div class="container">
-
-        <!-- NAVBAR -->
-        <nav class="navbar">
+        <!-- Barra de navegación -->
+        <nav>
             <div class="logo">
-                <img src="images/Logo.png" alt="Logo Track Seguridad" class="logo-img">
-                <span class="logo-text">Track Seguridad</span>
+                <img src="images/Logo.png" alt="Logo" class="logo-img">
             </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
@@ -26,187 +148,108 @@
             </ul>
         </nav>
 
-        <!-- HERO -->
+        <!-- Sección de Inicio -->
         <section id="inicio" class="hero">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <h1>Seguridad y rastreo en tiempo real</h1>
-                <p>Venta de GPS y servicios de rastreo satelital para vehículos, flotas y personas.</p>
-                <div class="hero-actions">
-                    <a href="#contacto" class="cta-button">Contáctanos</a>
-                    <a href="#servicios" class="secondary-button">Ver servicios</a>
-                </div>
+            <div class="hero-text">
+                <h1>Track Seguridad</h1>
+                <p>Venta de GPS y servicios de rastreo satelital</p>
+                <a href="#contacto" class="cta-button">Contáctanos</a>
             </div>
         </section>
 
-        <!-- NOSOTROS -->
-        <section id="nosotros" class="section-container fade-in">
-            <div class="section-header">
-                <h2>Sobre Nosotros</h2>
-                <p class="section-subtitle">
-                    En Track Seguridad brindamos soluciones avanzadas de rastreo satelital para que tengas
-                    control completo de lo que más te importa.
-                </p>
-            </div>
+        <!-- Sección de Nosotros -->
+        <section id="nosotros" class="section-container">
+            <h2>Sobre Nosotros</h2>
+            <p>En **Track Seguridad**, somos una empresa enfocada en brindar soluciones avanzadas de rastreo de vehículos y objetos, utilizando la última tecnología disponible en el mercado. Nos especializamos en ofrecer productos y servicios que aseguran la seguridad de tus bienes, con un enfoque innovador y personalizado para cada cliente.</p>
+            <img src="images/about-image.jpg" alt="Sobre nosotros" class="about-image">
+            <p>Nos enorgullece brindar un servicio confiable, eficiente y a la medida de las necesidades de nuestros clientes, asegurando la tranquilidad en todo momento. Nuestra misión es proteger lo que más te importa, utilizando sistemas de rastreo de última generación.</p>
+        </section>
 
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        En Track Seguridad, somos una empresa enfocada en brindar soluciones avanzadas de rastreo
-                        para vehículos, flotas y activos. Integramos tecnología GPS de última generación con
-                        plataformas amigables para el usuario.
-                    </p>
-                    <p>
-                        Nos enorgullece brindar un servicio confiable y eficiente, con soporte personalizado
-                        y herramientas diseñadas para mejorar la seguridad, optimizar rutas y reducir costos.
-                    </p>
-                </div>
-                <div class="about-image-wrapper">
-                    <img src="images/about-image.png" alt="Sobre nosotros" class="about-image">
-                </div>
+        <!-- Sección de Misión, Visión, Valores y Objetivos -->
+        <div class="info-box">
+            <div class="info">
+                <h3>Misión</h3>
+                <p>Ayudar a las marcas a mejorar su visibilidad mediante estrategias digitales innovadoras que ofrezcan resultados tangibles y medibles.</p>
+            </div>
+            <div class="info">
+                <h3>Visión</h3>
+                <p>Ser la agencia líder en marketing digital, innovando constantemente con soluciones adaptadas a las necesidades del cliente, utilizando las últimas tecnologías y creando estrategias exitosas.</p>
+            </div>
+            <div class="info">
+                <h3>Valores</h3>
+                <ul>
+                    <li>Innovación: Buscamos siempre las mejores soluciones tecnológicas para nuestros clientes.</li>
+                    <li>Compromiso: Nos comprometemos a ofrecer el mejor servicio y a cuidar de cada detalle.</li>
+                    <li>Transparencia: Creemos en relaciones abiertas y honestas con nuestros clientes.</li>
+                </ul>
+            </div>
+            <div class="info">
+                <h3>Objetivos</h3>
+                <ul>
+                    <li>Expandir nuestra presencia en el mercado local y regional.</li>
+                    <li>Brindar soluciones integrales de rastreo a nivel empresarial y personal.</li>
+                    <li>Continuar innovando y mejorando nuestra oferta de productos y servicios.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sección de Servicios -->
+        <section id="servicios" class="section-container">
+            <h2>Servicios</h2>
+            <div class="service-item">
+                <img src="images/gps-icon.png" alt="GPS" class="service-icon">
+                <h3>Venta de GPS</h3>
+                <p>Contamos con dispositivos avanzados para la localización de vehículos, personas y objetos.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/satellite-icon.png" alt="Satellite" class="service-icon">
+                <h3>Rastreo Satelital</h3>
+                <p>Monitoreo 24/7 de tu vehículo o bien más valioso, con acceso en tiempo real a la ubicación.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/custom-icon.png" alt="Custom" class="service-icon">
+                <h3>Monitoreo Personalizado</h3>
+                <p>Servicio personalizado para empresas que necesitan rastrear múltiples vehículos u objetos.</p>
             </div>
         </section>
 
-      <!-- MISIÓN, VISIÓN, VALORES Y OBJETIVOS (TABS SOLO HTML+CSS) -->
-        <section class="section-container fade-in mvvo-section">
-            <div class="section-header">
-                <h2>Misión, Visión, Valores y Objetivos</h2>
-            </div>
+        <!-- Sección de Portafolio (con FODA y Porter) -->
+        <section id="portfolio" class="section-container">
+            <h2>Revisa Nuestro Portafolio</h2>
 
-            <div class="mvvo-wrapper">
-                <!-- Radios ocultos para controlar las pestañas -->
-                <input type="radio" name="mvvo" id="mvvo-mision" class="mvvo-radio" checked>
-                <input type="radio" name="mvvo" id="mvvo-vision" class="mvvo-radio">
-                <input type="radio" name="mvvo" id="mvvo-valores" class="mvvo-radio">
-                <input type="radio" name="mvvo" id="mvvo-objetivos" class="mvvo-radio">
-
-                <!-- PESTAÑAS -->
-                <div class="mvvo-tabs">
-                    <label for="mvvo-mision" class="mvvo-tab">
-                        <span class="mvvo-icon">🎯</span>
-                        <span>MISIÓN</span>
-                    </label>
-                    <label for="mvvo-vision" class="mvvo-tab">
-                        <span class="mvvo-icon">🔭</span>
-                        <span>VISIÓN</span>
-                    </label>
-                    <label for="mvvo-valores" class="mvvo-tab">
-                        <span class="mvvo-icon">💜</span>
-                        <span>VALORES</span>
-                    </label>
-                    <label for="mvvo-objetivos" class="mvvo-tab">
-                        <span class="mvvo-icon">✅</span>
-                        <span>OBJETIVOS</span>
-                    </label>
-                </div>
-
-                <!-- CONTENIDO DE CADA PESTAÑA -->
-                <div class="mvvo-panels">
-                    <div class="mvvo-panel mvvo-panel-mision">
-                        <h3>Misión</h3>
-                        <p>
-                            Proveer soluciones de rastreo satelital confiables y accesibles que ayuden a
-                            nuestros clientes a proteger sus activos y tomar decisiones inteligentes.
-                        </p>
-                    </div>
-
-                    <div class="mvvo-panel mvvo-panel-vision">
-                        <h3>Visión</h3>
-                        <p>
-                            Ser la empresa referente en seguridad y monitoreo satelital en la región,
-                            combinando innovación tecnológica y cercanía con nuestros clientes.
-                        </p>
-                    </div>
-
-                    <div class="mvvo-panel mvvo-panel-valores">
-                        <h3>Valores</h3>
-                        <ul>
-                            <li>Innovación</li>
-                            <li>Compromiso</li>
-                            <li>Transparencia</li>
-                            <li>Responsabilidad</li>
-                        </ul>
-                    </div>
-
-                    <div class="mvvo-panel mvvo-panel-objetivos">
-                        <h3>Objetivos</h3>
-                        <ul>
-                            <li>Expandir presencia en el mercado.</li>
-                            <li>Brindar soluciones integrales de rastreo.</li>
-                            <li>Mejorar continuamente la experiencia del cliente.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- SERVICIOS -->
-        <section id="servicios" class="section-container fade-in">
-            <div class="section-header">
-                <h2>Servicios</h2>
-                <p class="section-subtitle">
-                    Soluciones diseñadas para vehículos particulares, empresas y flotas de transporte.
-                </p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-item card-hover">
-                    <img src="images/gps-icon.png" class="service-icon" alt="Venta de GPS">
-                    <h3>Venta de GPS</h3>
-                    <p>Dispositivos de alta precisión para localización en tiempo real.</p>
-                </div>
-
-                <div class="service-item card-hover">
-                    <img src="images/satelite.png" class="service-icon" alt="Rastreo Satelital">
-                    <h3>Rastreo Satelital</h3>
-                    <p>Monitoreo 24/7 desde cualquier dispositivo con conexión a internet.</p>
-                </div>
-
-                <div class="service-item card-hover">
-                    <img src="images/custom.png" class="service-icon" alt="Monitoreo Personalizado">
-                    <h3>Monitoreo Personalizado</h3>
-                    <p>Planes adaptados a empresas con flotas grandes y necesidades específicas.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- PORTAFOLIO -->
-        <section id="portfolio" class="section-container fade-in">
-            <div class="section-header">
-                <h2>Revisa Nuestro Portafolio</h2>
-                <p class="section-subtitle">
-                    Análisis estratégico para entender dónde estamos y hacia dónde vamos.
-                </p>
-            </div>
-
-            <!-- FODA -->
-            <div class="box card-hover">
-                <h3>Análisis FODA</h3>
+            <!-- Análisis FODA -->
+            <div class="box">
+                <h2>Análisis FODA</h2>
                 <div class="two-column">
-                    <div>
-                        <h4>Fortalezas</h4>
+                    <div class="box">
+                        <h3>Fortalezas</h3>
                         <ul>
                             <li>Automatización avanzada.</li>
                             <li>Soluciones personalizadas para cada cliente.</li>
                             <li>Soporte técnico dedicado.</li>
                         </ul>
-
-                        <h4>Oportunidades</h4>
+                    </div>
+                    <div class="box">
+                        <h3>Oportunidades</h3>
                         <ul>
                             <li>Crecimiento del comercio electrónico.</li>
                             <li>Aumento de la demanda en seguridad vehicular.</li>
                             <li>Avances tecnológicos en telecomunicaciones.</li>
                         </ul>
                     </div>
+                </div>
 
-                    <div>
-                        <h4>Debilidades</h4>
+                <div class="two-column">
+                    <div class="box">
+                        <h3>Debilidades</h3>
                         <ul>
                             <li>Bajo reconocimiento de marca inicial.</li>
                             <li>Procesos en expansión.</li>
                             <li>Limitada experiencia internacional.</li>
                         </ul>
-
-                        <h4>Amenazas</h4>
+                    </div>
+                    <div class="box">
+                        <h3>Amenazas</h3>
                         <ul>
                             <li>Alta competencia en el sector.</li>
                             <li>Cambios regulatorios y tecnológicos.</li>
@@ -216,91 +259,106 @@
                 </div>
             </div>
 
-            <!-- PORTER -->
-            <div class="box card-hover">
+            <!-- Estrategias FODA -->
+            <div class="box">
+                <h3>Estrategias FODA</h3>
+                <div class="two-column">
+                    <div class="box">
+                        <h4>FO (Fortalezas + Oportunidades)</h4>
+                        <ul>
+                            <li>F1 + O4: Aplicar automatización avanzada con nuevas herramientas de análisis de datos.</li>
+                            <li>F2 + O2: Ofrecer planes personalizados de marketing y seguridad para emprendedores.</li>
+                            <li>F3 + O3: Crear alianzas con diseñadores freelance y programadores.</li>
+                            <li>F4 + O4: Diseñar campañas digitales para e-commerce y capacitar a los clientes.</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h4>DO (Debilidades + Oportunidades)</h4>
+                        <ul>
+                            <li>D1 + O3: Asociarse con influencers o creadores de contenido para aumentar visibilidad.</li>
+                            <li>D4 + O2: Ofrecer servicios básicos de rastreo a un costo accesible para captar nuevos clientes.</li>
+                            <li>D3 + O4: Capacitar al equipo en las últimas tendencias internacionales de e-commerce.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="two-column">
+                    <div class="box">
+                        <h4>FA (Fortalezas + Amenazas)</h4>
+                        <ul>
+                            <li>F1 + A2: Adaptar automatizaciones rápidamente a los cambios de algoritmo.</li>
+                            <li>F2 + A1: Enfocarse en propuestas creativas para diferenciarse de competidores.</li>
+                            <li>F3 + A3: Ofrecer resultados medibles para justificar el valor de inversión.</li>
+                            <li>F4 + A4: Usar redes sociales como medio de comunicación en tiempos de crisis.</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h4>DA (Debilidades + Amenazas)</h4>
+                        <ul>
+                            <li>D1 + A1: Posicionar nuestra marca mediante testimonios de clientes satisfechos.</li>
+                            <li>D3 + A3: Optimizar recursos internos para ofrecer servicios más rentables.</li>
+                            <li>D4 + A4: Establecer el equipo ofreciendo beneficios no económicos para aumentar la motivación del personal.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 Fuerzas de Porter -->
+            <div class="box">
                 <h3>5 Fuerzas de Porter</h3>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Fuerza</th>
-                                <th>Valoración</th>
-                                <th>Estrategia</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Clientes</td>
-                                <td>1</td>
-                                <td>Diferenciación clara, plataformas intuitivas y soporte constante.</td>
-                            </tr>
-                            <tr>
-                                <td>Proveedores</td>
-                                <td>1</td>
-                                <td>Alianzas estratégicas con proveedores tecnológicos confiables.</td>
-                            </tr>
-                            <tr>
-                                <td>Nuevos competidores</td>
-                                <td>0</td>
-                                <td>Ofrecer valor agregado mediante servicios personalizados.</td>
-                            </tr>
-                            <tr>
-                                <td>Sustitutos</td>
-                                <td>0</td>
-                                <td>Enfatizar la precisión y estabilidad de nuestras soluciones.</td>
-                            </tr>
-                            <tr>
-                                <td>Rivalidad</td>
-                                <td>1</td>
-                                <td>Posicionamiento mediante casos de éxito y atención cercana.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <table>
+                    <tr>
+                        <th>Fuerza</th>
+                        <th>Valoración</th>
+                        <th>Estrategia</th>
+                    </tr>
+                    <tr>
+                        <td>Clientes</td>
+                        <td>1</td>
+                        <td>Diferenciación clara, plataformas intuitivas y soporte constante.</td>
+                    </tr>
+                    <tr>
+                        <td>Proveedores</td>
+                        <td>1</td>
+                        <td>Alianzas estratégicas con proveedores tecnológicos confiables.</td>
+                    </tr>
+                    <tr>
+                        <td>Nuevos competidores</td>
+                        <td>0</td>
+                        <td>Ofrecer valor agregado mediante servicios personalizados.</td>
+                    </tr>
+                    <tr>
+                        <td>Sustitutos</td>
+                        <td>0</td>
+                        <td>Enfatizar la precisión y estabilidad de nuestras soluciones.</td>
+                    </tr>
+                    <tr>
+                        <td>Rivalidad</td>
+                        <td>1</td>
+                        <td>Posicionamiento mediante casos de éxito y atención cercana.</td>
+                    </tr>
+                </table>
             </div>
         </section>
 
-        <!-- MATRIZ BCG -->
-        <section id="matriz-bcg" class="section-container fade-in">
-            <div class="section-header">
-                <h2>Matriz BCG</h2>
-                <p class="section-subtitle">
-                    Análisis visual del portafolio de servicios de Track Seguridad.
-                </p>
-            </div>
-
-            <div class="bcg-images">
-                <div class="bcg-card">
-                    <img src="images/imagen1.png" alt="Matriz BCG" />
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACTO -->
-        <section id="contacto" class="section-container fade-in">
-            <div class="section-header">
-                <h2>Contáctanos</h2>
-                <p class="section-subtitle">
-                    Déjanos tus datos y nos pondremos en contacto contigo para asesorarte.
-                </p>
-            </div>
-            <form action="#" class="contact-form">
-                <div class="form-row">
-                    <input type="text" name="nombre" placeholder="Nombre" required>
-                    <input type="email" name="email" placeholder="Correo electrónico" required>
-                </div>
-                <textarea name="mensaje" placeholder="Cuéntanos qué necesitas" required></textarea>
-                <button type="submit" class="cta-button">Enviar mensaje</button>
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="section-container">
+            <h2>Contáctanos</h2>
+            <form action="#">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit" class="cta-button">Enviar</button>
             </form>
         </section>
 
         <footer>
             <p>&copy; 2025 Track Seguridad. Todos los derechos reservados.</p>
         </footer>
-
     </div>
 </body>
 </html>
+
 
 
 
