@@ -67,47 +67,78 @@
             </div>
         </section>
 
-        <!-- MISIÓN, VISIÓN, VALORES -->
-        <section class="section-container fade-in">
+      <!-- MISIÓN, VISIÓN, VALORES Y OBJETIVOS (TABS SOLO HTML+CSS) -->
+        <section class="section-container fade-in mvvo-section">
             <div class="section-header">
                 <h2>Misión, Visión, Valores y Objetivos</h2>
             </div>
 
-            <div class="cards-grid">
-                <div class="info-card">
-                    <h3>Misión</h3>
-                    <p>
-                        Proveer soluciones de rastreo satelital confiables y accesibles que ayuden a
-                        nuestros clientes a proteger sus activos y tomar decisiones inteligentes.
-                    </p>
+            <div class="mvvo-wrapper">
+                <!-- Radios ocultos para controlar las pestañas -->
+                <input type="radio" name="mvvo" id="mvvo-mision" class="mvvo-radio" checked>
+                <input type="radio" name="mvvo" id="mvvo-vision" class="mvvo-radio">
+                <input type="radio" name="mvvo" id="mvvo-valores" class="mvvo-radio">
+                <input type="radio" name="mvvo" id="mvvo-objetivos" class="mvvo-radio">
+
+                <!-- PESTAÑAS -->
+                <div class="mvvo-tabs">
+                    <label for="mvvo-mision" class="mvvo-tab">
+                        <span class="mvvo-icon">🎯</span>
+                        <span>MISIÓN</span>
+                    </label>
+                    <label for="mvvo-vision" class="mvvo-tab">
+                        <span class="mvvo-icon">🔭</span>
+                        <span>VISIÓN</span>
+                    </label>
+                    <label for="mvvo-valores" class="mvvo-tab">
+                        <span class="mvvo-icon">💜</span>
+                        <span>VALORES</span>
+                    </label>
+                    <label for="mvvo-objetivos" class="mvvo-tab">
+                        <span class="mvvo-icon">✅</span>
+                        <span>OBJETIVOS</span>
+                    </label>
                 </div>
-                <div class="info-card">
-                    <h3>Visión</h3>
-                    <p>
-                        Ser la empresa referente en seguridad y monitoreo satelital en la región,
-                        combinando innovación tecnológica y cercanía con nuestros clientes.
-                    </p>
-                </div>
-                <div class="info-card">
-                    <h3>Valores</h3>
-                    <ul>
-                        <li>Innovación</li>
-                        <li>Compromiso</li>
-                        <li>Transparencia</li>
-                        <li>Responsabilidad</li>
-                    </ul>
-                </div>
-                <div class="info-card">
-                    <h3>Objetivos</h3>
-                    <ul>
-                        <li>Expandir presencia en el mercado.</li>
-                        <li>Brindar soluciones integrales de rastreo.</li>
-                        <li>Mejorar continuamente la experiencia del cliente.</li>
-                    </ul>
+
+                <!-- CONTENIDO DE CADA PESTAÑA -->
+                <div class="mvvo-panels">
+                    <div class="mvvo-panel mvvo-panel-mision">
+                        <h3>Misión</h3>
+                        <p>
+                            Proveer soluciones de rastreo satelital confiables y accesibles que ayuden a
+                            nuestros clientes a proteger sus activos y tomar decisiones inteligentes.
+                        </p>
+                    </div>
+
+                    <div class="mvvo-panel mvvo-panel-vision">
+                        <h3>Visión</h3>
+                        <p>
+                            Ser la empresa referente en seguridad y monitoreo satelital en la región,
+                            combinando innovación tecnológica y cercanía con nuestros clientes.
+                        </p>
+                    </div>
+
+                    <div class="mvvo-panel mvvo-panel-valores">
+                        <h3>Valores</h3>
+                        <ul>
+                            <li>Innovación</li>
+                            <li>Compromiso</li>
+                            <li>Transparencia</li>
+                            <li>Responsabilidad</li>
+                        </ul>
+                    </div>
+
+                    <div class="mvvo-panel mvvo-panel-objetivos">
+                        <h3>Objetivos</h3>
+                        <ul>
+                            <li>Expandir presencia en el mercado.</li>
+                            <li>Brindar soluciones integrales de rastreo.</li>
+                            <li>Mejorar continuamente la experiencia del cliente.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-
         <!-- SERVICIOS -->
         <section id="servicios" class="section-container fade-in">
             <div class="section-header">
@@ -270,5 +301,6 @@
     </div>
 </body>
 </html>
+
 
 
